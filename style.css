@@ -1,0 +1,259 @@
+body {
+  box-sizing: border-box;
+}
+
+.pageDaccuiel {
+  background-image: url(./chaos-theory_FRACTALINA.jpg);
+  box-sizing: border-box;
+  background-size: cover;
+  color: rgb(200, 2, 2);
+}
+.myImage {
+  width: 400px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+.myContent {
+  margin-top: 200px;
+}
+.myEmail:hover {
+  border: 4mm ridge rgba(9, 232, 76, 0.6);
+}
+.divMyEmail {
+  margin-top: 200px;
+  margin-left: 50px;
+}
+
+html {
+  background: #19181800;
+}
+
+.logo-holder {
+  background: rgba(9, 9, 9, 0);
+  width: 180px;
+  height: 220px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  -webkit-transform: translateZ(0);
+  top: 100px;
+}
+
+.bg {
+  position: absolute;
+  top: 9px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  background: url(http://boutique.flarework.com/wp-content/themes/boutique/img/logo_large.png)
+    center 0px no-repeat;
+  background-size: contain;
+  -webkit-filter: drop-shadow(0px 6px 25px rgba(0, 0, 0, 0));
+}
+
+.bar {
+  position: relative;
+  height: 8px;
+  background: #6a6a6a00;
+  width: 0%;
+  top: 0px;
+  left: 18px;
+  margin-top: 8px;
+  box-shadow: 0 0 3px rgba(192, 192, 192, 0.9);
+  animation: fill 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill1 {
+  animation: fill-1 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill2 {
+  animation: fill-2 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill3 {
+  animation: fill-3 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill4 {
+  animation: fill-4 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill5 {
+  animation: fill-5 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill6 {
+  animation: fill-6 5s infinite alternate, colors 5s infinite alternate;
+}
+
+@keyframes fill {
+  0% {
+    width: 0;
+  }
+  33% {
+    width: 30px;
+  }
+  66% {
+    width: 10px;
+  }
+  100% {
+    width: 105px;
+  }
+}
+
+@keyframes fill-1 {
+  0% {
+    width: 0;
+  }
+  33% {
+    width: 50px;
+  }
+  66% {
+    width: 20px;
+  }
+  100% {
+    width: 130px;
+  }
+}
+
+@keyframes fill-2 {
+  0% {
+    width: 0;
+  }
+  33% {
+    width: 90px;
+  }
+  66% {
+    width: 70px;
+  }
+  100% {
+    width: 136px;
+  }
+}
+
+@keyframes fill-3 {
+  0% {
+    width: 0;
+  }
+  33% {
+    width: 50px;
+  }
+  66% {
+    width: 24px;
+  }
+  100% {
+    width: 109px;
+  }
+}
+
+@keyframes fill-4 {
+  0% {
+    width: 0;
+  }
+  33% {
+    width: 98px;
+  }
+  66% {
+    width: 34px;
+  }
+  100% {
+    width: 99px;
+  }
+}
+
+@keyframes fill-5 {
+  0% {
+    width: 0;
+  }
+  33% {
+    width: 30px;
+  }
+  66% {
+    width: 10px;
+  }
+  100% {
+    width: 148px;
+  }
+}
+
+@keyframes fill-6 {
+  0% {
+    width: 0;
+  }
+  33% {
+    width: 48px;
+  }
+  66% {
+    width: 22px;
+  }
+  100% {
+    width: 140px;
+  }
+}
+
+@keyframes colors {
+  0% {
+    background-color: #5a5a5a;
+  }
+  50% {
+    background-color: rgb(227, 8, 8);
+  }
+  100% {
+    background-color: #6a6a6a;
+  }
+}
+
+.mySvg {
+    color: #453636;
+  animation-name: example;
+  animation-duration: 4s;
+}
+.mySvg:hover{
+    color: #00ff0d;
+   width: 40px;
+   height: 40px;
+   animation: shake 0.5s;
+   animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }}
+@keyframes example {
+  0% {
+    color: rgb(205, 138, 138);
+  }
+  10% {
+    color: rgb(209, 96, 96);
+  }
+  20% {
+    color: rgb(222, 51, 51);
+  }
+  30% {
+    color: rgb(204, 3, 3);
+  }
+  40% {
+    color: rgb(101, 4, 4);
+  }
+  50% {
+    color: rgb(171, 13, 13);
+  }
+  60% {
+    color: rgb(203, 56, 56);
+  }
+  70% {
+    color: rgb(179, 155, 20);
+  }
+  80% {
+    color: rgb(96, 3, 3);
+  }
+  90% {
+    color: rgb(241, 90, 76);
+  }
+  100% {
+    color: rgb(203, 20, 20);
+  }
+}
