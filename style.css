@@ -6,12 +6,32 @@ body {
   background-image: url(./chaos-theory_FRACTALINA.jpg);
   box-sizing: border-box;
   background-size: cover;
-  color: rgb(200, 2, 2);
+
 }
+
 .myImage {
-  width: 400px;
-  margin-left: 150px;
-  margin-top: 50px;
+  --s: 15px;  /* size of the frame */
+  --b: 2px;   /* border thickness */
+  --w: 400px; /* width of the image */
+  --c: #7B3B3B;
+  
+  width: var(--w);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2*var(--s));
+  --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+  background:
+    linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+  outline: calc(var(--w)/2) solid #0009;
+  outline-offset: calc(var(--w)/-2 - 2*var(--s));
+  transition: .4s;
+  cursor: pointer;
+}
+.myImage:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s)/-2);
+  --_i: calc(100% - 2*var(--s));
 }
 .myContent {
   margin-top: 200px;
@@ -23,7 +43,7 @@ body {
   margin-top: 200px;
   margin-left: 50px;
 }
-
+/* animation css page d'accueil */
 html {
   background: #19181800;
 }
@@ -203,6 +223,7 @@ html {
   100% {
     background-color: #6a6a6a;
   }
+  /* svg icons page d'accueil */
 }
 
 .mySvg {
@@ -257,3 +278,49 @@ html {
     color: rgb(203, 20, 20);
   }
 }
+/* page1 */
+.page1 {
+  background-image: url(./chaos-theory_FRACTALINA.jpg);
+  box-sizing: border-box;
+  background-size: cover;
+
+
+}
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ 
