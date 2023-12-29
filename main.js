@@ -1,9 +1,13 @@
-// let button=document.getElementsByClassName('myButtonToUp');
-// button.addEventListener('click',()=>{
+let button=document.getElementsByClassName('myButtonToUp');
+button.addEventListener('click',()=>{
+ button.getAttribute("href").innerText="./index.html";
+ 
 
-// });
-document.querySelectorAll(".box").addEventListener('mouseover',()=>{
-document.querySelectorAll(".nameProgramme").style.visibility = "visible";
+
+})
+document.querySelector(".image1").addEventListener('click',()=>{
+document.querySelector(".nameProgramme1").style.visibility = "hidden";
+
 
 
 })
