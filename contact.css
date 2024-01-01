@@ -6,7 +6,7 @@ body {
   
   .letter-image {
     position: absolute;
-    top: 50%;
+    top: 450Px;
     left: 50%;
     width: 200px;
     height: 200px;
@@ -174,7 +174,7 @@ body {
 
     }
     .myEmail:hover{
-        color: #cf4a43;
+        color: #fa1003;
         
         font-family: 'Times New Roman', Times, serif;
     }
@@ -187,6 +187,9 @@ body {
         font-family: 'Times New Roman', Times, serif;
     }
 
+.myFoot{
+  margin-top: 400px;
+}
 
 
 
@@ -205,6 +208,5 @@ body {
 
 
 
-    footer{
-      background-image: ;
-    }
+
+   
