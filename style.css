@@ -15,7 +15,7 @@ body {
 .myImage {
   --s: 15px;  /* size of the frame */
   --b: 2px;   /* border thickness */
-  --w: 400px; /* width of the image */
+  --w: 500px; /* width of the image */
   --c: #7B3B3B;
   
   width: var(--w);
@@ -38,7 +38,7 @@ body {
 }
 .myContent {
   /* margin-top: 200px; */
-width: 600Px;
+width: 700Px;
 margin-left: 100px;
 }
 
@@ -593,3 +593,29 @@ margin-right: auto;
   color: #00ff0d;
 
  }
+  /*animation developpeur web in navbar */
+  .developpeurWeb {
+    font-weight: 700;
+    text-align: center;
+    font-size: 15px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
