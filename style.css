@@ -37,7 +37,6 @@ body {
   --_i: calc(100% - 2*var(--s));
 }
 .myContent {
-  /* margin-top: 200px; */
 width: 700Px;
 margin-left: 100px;
 }
@@ -495,7 +494,7 @@ margin-right: auto;
 .footer1{
   height:0px;
   width:1px;
-  border-bottom:6px solid #b2ba0e;
+  border-bottom:6px solid #460202;
   
   -webkit-animation: increase 15s;
   -moz-animation:    increase 15s; 
@@ -530,7 +529,7 @@ margin-right: auto;
 .footer3{
   height:0px;
   width:1px;
-  border-bottom:2px solid #bdf406;
+  border-bottom:2px solid #ed5151;
   
   -webkit-animation: increase 7s;
   -moz-animation:    increase 7s; 
@@ -579,4 +578,10 @@ margin-right: auto;
     100% {
       background-position-x: 500%;
     }
+  }
+  .hoverMenue{
+    opacity: 0.5;
+  }
+  .hoverMenue:hover{
+    opacity: 1;
   }
