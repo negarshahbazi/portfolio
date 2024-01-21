@@ -304,57 +304,18 @@ html {
 
 /* programmations*/
 
-
-
-.page1 {
-  /* background-image: url(./chaos-theory_FRACTALINA.jpg); */
-  box-sizing: border-box;
-  background-size: cover;
-
-
-}
-.myContainer {
- 
-  display: flex;
-  width: 100%;
-  padding: 4% 2%;
-  box-sizing: border-box;
-  height: 100vh;
- 
-}
-
-.box {
-  flex: 1;
-  overflow: hidden;
-  transition: .5s;
-  margin: 0 2%;
-  box-shadow: 0 20px 30px rgba(0,0,0,.1);
-  line-height: 0;
- 
-}
-
-.box > img {
-  width:30%;
-  height: calc(20% - 1vh);
-  object-fit: cover; 
-  transition: .5s;
-}
-
-.box > span {
-  font-size: 2.8vh;
-  display: block;
-  text-align: start;
-  height: 10vh;
-  line-height: 1.5;
-}
-
-.box:hover { flex: 1 1 10%; }
-.box:hover > img {
-  width: 100%;
-  height: 30%;
+.grayscale{
+  width: 100px;
+  height: 100px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
   border-radius: 30%;
- 
-
+}
+.grayscale:hover{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 /* page1 */
