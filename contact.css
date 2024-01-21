@@ -6,7 +6,7 @@ body {
   
   .letter-image {
     position: absolute;
-    top: 450Px;
+    top:90%;
     left: 50%;
     width: 200px;
     height: 200px;
@@ -31,7 +31,7 @@ body {
       height: 0;
       border-style: solid;
       border-width: 0 0 100px 200px;
-      border-color: transparent transparent #e95f55 transparent;
+      border-color: transparent transparent #610e08 transparent;
       z-index: 2;
     }
     
@@ -48,7 +48,7 @@ body {
       -moz-transition: transform .4s .4s, z-index .2s .4s;
       transform-origin: 50% 0%;
       transition: transform .4s .4s, z-index .2s .4s;
-      border-color: #cf4a43 transparent transparent transparent;
+      border-color: #4f0905 transparent transparent transparent;
       z-index: 2;
     }
     
@@ -57,7 +57,7 @@ body {
       bottom: 0;
       width: 200px;
       height: 100px;
-      background: #cf4a43;
+      background: #540905;
       z-index: 0;
     }
     
@@ -68,7 +68,7 @@ body {
       height: 0;
       border-style: solid;
       border-width: 50px 0 50px 100px;
-      border-color: transparent transparent transparent #e15349;
+      border-color: transparent transparent transparent #600e08;
       z-index: 2;
     }
     
@@ -90,8 +90,8 @@ body {
         width: 100%;
         background: repeating-linear-gradient(
           -45deg,
-          #cb5a5e,
-          #cb5a5e 8px,
+          #7f0408,
+          #5c0a0d 8px,
           transparent 8px,
           transparent 18px
         );
@@ -102,14 +102,14 @@ body {
         margin-left: 5px;
         height: 10px;
         width: 40%;
-        background: #cb5a5e;
+        background: #5d0407;
       }
       .letter-context {
         margin-top: 10px;
         margin-left: 5px;
         height: 10px;
         width: 20%;
-        background: #cb5a5e;
+        background: #63060a;
       }
       
       .letter-stamp {
@@ -118,7 +118,7 @@ body {
         border-radius: 100%;
         height: 30px;
         width: 30px;
-        background: #cb5a5e;
+        background: #6c070b;
         opacity: 0.3;
       }
     }
@@ -138,7 +138,7 @@ body {
     -moz-transform: translateX(-50%);
     
     border-radius: 100%;
-    background: radial-gradient(rgba(252, 20, 4, 0.333), rgba(210, 210, 38, 0.324), rgba(237, 227, 47, 0.932));
+    background: radial-gradient(rgba(252, 20, 4, 0.333), rgba(210, 210, 38, 0.324), rgba(237, 101, 47, 0.932));
   }
   
     .letter-image:hover {
@@ -174,7 +174,7 @@ body {
 
     }
     .myEmail:hover{
-        color: #fa1003;
+        color: #6c0a05;
         
         font-family: 'Times New Roman', Times, serif;
     }
@@ -183,7 +183,7 @@ body {
         color: #fcfdff;
     }
     .myPhone:hover{
-        color: #cf4a43;
+        color: #450906;
         font-family: 'Times New Roman', Times, serif;
     }
 
