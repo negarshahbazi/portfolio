@@ -12,7 +12,10 @@ document.querySelector(".nameProgramme1").style.visibility = "hidden";
 
 })
 
+document.getElementsByClassName('letter-image').addEventListener('mouseover',()=>{
+  document.getElementsByClassName('myEmail').style.color="red";
 
+})
 document.getElementsByClassName('hoverMenue').addEventListener('mouseover',()=>{
     document.getElementsByClassName('hoverMenue').classList = "nav-link active text-white opacity-50 hoverMenue" ; 
 })

@@ -6,7 +6,7 @@ body {
   
   .letter-image {
     position: absolute;
-    top:90%;
+    top:70%;
     left: 50%;
     width: 200px;
     height: 200px;
@@ -33,7 +33,7 @@ body {
       border-width: 0 0 100px 200px;
       border-color: transparent transparent #610e08 transparent;
       z-index: 2;
-    }
+    } 
     
     .top-fold {
       position: absolute;
@@ -169,21 +169,21 @@ body {
     .myEmail{
         text-decoration: none;
     
-        color: #fcfdff;
+        color: #090909;
         font-weight: 700;
 
     }
     .myEmail:hover{
-        color: #6c0a05;
+        color: #f81105;
         
         font-family: 'Times New Roman', Times, serif;
     }
     .myPhone{
         font-weight: 700;
-        color: #fcfdff;
+        color: #060606;
     }
     .myPhone:hover{
-        color: #450906;
+        color: #ff1307;
         font-family: 'Times New Roman', Times, serif;
     }
 
