@@ -1,9 +1,14 @@
+
+@import url('https://fonts.cdnfonts.com/css/adlam-display');
+*{font-family: 'ADLaM Display', sans-serif;}           
 body {
- 
+  /* ./images/Animated\ Shape.svg */
   box-sizing: border-box;
-  background-image: url(./images/aq.avif);
+  background-image: url(./images/Trianglify-10s-1280px.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .pageDaccuiel {
@@ -259,11 +264,13 @@ html {
     color: #453636;
   animation-name: example;
   animation-duration: 4s;
+  width: 40px;
+   height: 40px;
 }
 .mySvg:hover{
-    color: #00ff0d;
-   width: 40px;
-   height: 40px;
+    color: #f18a8a;
+   /* width: 40px;
+   height: 40px; */
    animation: shake 0.5s;
    animation-iteration-count: infinite;
 }
@@ -295,7 +302,7 @@ html {
     color: rgb(203, 56, 56);
   }
   70% {
-    color: rgb(179, 155, 20);
+    color: rgba(241, 144, 135, 0.486);
   }
   80% {
     color: rgb(96, 3, 3);
@@ -311,6 +318,7 @@ html {
 /* programmations*/
 
 .grayscale{
+ 
   width: 100px;
   height: 100px;
 	-webkit-filter: grayscale(100%);
@@ -322,6 +330,8 @@ html {
 .grayscale:hover{
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
+ 
+
 }
 
 /* page1 */
@@ -570,7 +580,7 @@ margin-right: auto;
  color: rgb(255, 255, 255);
 }
 .myButtonToUp:hover{
-  color: #00ff0d;
+  color: #ff37002e;
 
  }
   /*animation developpeur web in navbar */
@@ -607,11 +617,11 @@ margin-right: auto;
   }
   /* portfolio */
   @keyframes tipsy {
-    0 {
-      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    0%{
+      transform : translateX(-50%) translateY(-50%) rotate(0deg);
     }
     100% {
-      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+      transform : translateX(-50%) translateY(-50%) rotate(360deg);
     }
   }
   
@@ -626,7 +636,7 @@ margin-right: auto;
     letter-spacing: -3px;
     margin: 0;
     position: absolute;
-    top:50%;
+    top:29%;
     left: 87%;
     transform: translateX(-50%) translateY(-50%);
   }
@@ -653,4 +663,26 @@ margin-right: auto;
   .a:after {
     border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
     box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+  }
+  /* animation for svg  */
+  .pathSvg {
+    stroke: #000;
+    fill: transparent;
+    stroke-dasharray: 500;
+    stroke-dashoffset: -500;
+    animation: animate 5s forwards infinite;
+    width: 100px;
+  }
+@keyframes animate {
+  100% {
+    stroke-dashoffset: 500;
+  }}
+  .pathSvg:hover{
+    stroke: #fc0303;
+    fill:#d40303;
+    opacity: 0.2;
+    stroke-dasharray: 500;
+    stroke-dashoffset: -500;
+    animation: animate 5s forwards infinite;
+    width: 100px;
   }

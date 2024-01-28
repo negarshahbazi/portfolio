@@ -112,4 +112,11 @@ document.getElementsByClassName('hoverMenue').addEventListener('mouseover',()=>{
   detectInput('mousemove');
   detectInput('touchmove');
   
-})();
+});
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector(".LetterInContact").addEventListener('mouseover',()=>{
+      document.querySelector(".myEmailPhoneSvg").classList.remove("d-none");
+      document.querySelector(".myEmailPhoneSvg").classList.add("d-flex");
+  });
+});
+

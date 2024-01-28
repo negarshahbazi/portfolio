@@ -6,7 +6,7 @@ body {
   
   .letter-image {
     position: absolute;
-    top:70%;
+    top:90%;
     left: 50%;
     width: 200px;
     height: 200px;
@@ -31,7 +31,7 @@ body {
       height: 0;
       border-style: solid;
       border-width: 0 0 100px 200px;
-      border-color: transparent transparent #610e08 transparent;
+      border-color: transparent transparent #f97a7ead transparent;
       z-index: 2;
     } 
     
@@ -48,7 +48,7 @@ body {
       -moz-transition: transform .4s .4s, z-index .2s .4s;
       transform-origin: 50% 0%;
       transition: transform .4s .4s, z-index .2s .4s;
-      border-color: #4f0905 transparent transparent transparent;
+      border-color: #fd7175c7 transparent ;
       z-index: 2;
     }
     
@@ -57,7 +57,7 @@ body {
       bottom: 0;
       width: 200px;
       height: 100px;
-      background: #540905;
+      background: #f97a7ead transparent;
       z-index: 0;
     }
     
@@ -68,7 +68,7 @@ body {
       height: 0;
       border-style: solid;
       border-width: 50px 0 50px 100px;
-      border-color: transparent transparent transparent #600e08;
+      border-color: transparent transparent transparent #f97a7ead;
       z-index: 2;
     }
     
@@ -90,8 +90,8 @@ body {
         width: 100%;
         background: repeating-linear-gradient(
           -45deg,
-          #7f0408,
-          #5c0a0d 8px,
+          #ff0109,
+          #f801b2 8px,
           transparent 8px,
           transparent 18px
         );
@@ -102,14 +102,14 @@ body {
         margin-left: 5px;
         height: 10px;
         width: 40%;
-        background: #5d0407;
+        background: #f56ad27e;
       }
       .letter-context {
         margin-top: 10px;
         margin-left: 5px;
         height: 10px;
         width: 20%;
-        background: #63060a;
+        background: #f56ad27e;
       }
       
       .letter-stamp {
@@ -118,7 +118,7 @@ body {
         border-radius: 100%;
         height: 30px;
         width: 30px;
-        background: #6c070b;
+        background: #ef87ce;
         opacity: 0.3;
       }
     }
@@ -138,7 +138,7 @@ body {
     -moz-transform: translateX(-50%);
     
     border-radius: 100%;
-    background: radial-gradient(rgba(252, 20, 4, 0.333), rgba(210, 210, 38, 0.324), rgba(237, 101, 47, 0.932));
+    background: radial-gradient(rgba(57, 56, 56, 0.169), rgba(65, 28, 65, 0.196), rgba(63, 32, 32, 0.146));
   }
   
     .letter-image:hover {
