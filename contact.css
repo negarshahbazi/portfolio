@@ -6,7 +6,7 @@ body {
   
   .letter-image {
     position: absolute;
-    top:90%;
+    top:30%;
     left: 50%;
     width: 200px;
     height: 200px;
@@ -166,31 +166,42 @@ body {
         width: 250px;
       }
     }
+    /* email */
     .myEmail{
         text-decoration: none;
     
-        color: #090909;
+        color: #777373;
         font-weight: 700;
 
     }
     .myEmail:hover{
-        color: #f81105;
+        color: #ea7c77;
         
         font-family: 'Times New Roman', Times, serif;
     }
     .myPhone{
         font-weight: 700;
-        color: #060606;
+        color: #777373;
     }
     .myPhone:hover{
-        color: #ff1307;
+        color: #ea7c77;
         font-family: 'Times New Roman', Times, serif;
     }
 
 .myFoot{
-  margin-top: 400px;
+  
+  margin-top: 600px;
 }
+.myEmailPhoneSvg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
 
+top: 40%;
+}
 
 
 
