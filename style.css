@@ -698,7 +698,7 @@ margin-right: auto;
     stroke-dasharray: 500;
     stroke-dashoffset: -500;
     animation: animate 5s forwards infinite;
-    width: 100px;
+    width: 150px;
   }
 @keyframes animate {
   100% {
@@ -707,9 +707,10 @@ margin-right: auto;
   .pathSvg:hover{
     stroke: #fc0303;
     fill:#d40303;
-    opacity: 0.2;
+    opacity: 0.3;
     stroke-dasharray: 500;
     stroke-dashoffset: -500;
     animation: animate 5s forwards infinite;
-    width: 100px;
+    width: 150px;
   }
+ 
