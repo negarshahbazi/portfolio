@@ -57,6 +57,7 @@
     <div class=" row">
         <div class="col-lg-6 col-12 d-flex justify-content-center">
             <img src="./images/IMG_8449.JPG" class="myImage "alt="">
+           
           
           
             <div class="d-lg-flex d-none flex-column align-items-between justify-content-between">
@@ -92,8 +93,10 @@
         </div>
 
         <div class="col-lg-6 col-12 content">
-
           <p class="myContent text-black text-lg-start text-center col-12">Actuellement en formation à Saint-Etienne avec <span class="fs-5">Garage404</span> et <span class="fs-5">Simplon</span>, je recherche un stage dans le développement web pour la période du 13 Mai 2024 au 19 Juillet 2024.Passionnée par le monde de la programmation, je suis motivée à mettre en pratique mes compétences nouvellement acquises au sein de votre entreprise. Mon objectif est d'approfondir mes connaissances et de contribuer de manière proactive à des projets innovants. Je reste à votre disposition pour discuter de toute opportunité de stage au sein de votre équipe. Merci de considérer ma candidature.</p>
+        <div class="back2"></div>
+        <div class="back3"></div>
+        <div class="back4"></div>
         </div>
     </div>  
   </section>
@@ -128,13 +131,32 @@
       </svg> negar shahbazi</p>
     </div>
     <div class=" text-black d-flex justify-content-end">
-      <a class=" myButtonToUp hover" href=""><svg class="m-3 right-0" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+      <a  onclick="topFunction()" id="myBtn" class=" myButtonToUp hover" href=""><svg class="m-3 right-0" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
         <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
       </svg></a>
     </div>
   </footer>
 </section>
-<script src="./main.js"></script>
+<script >// When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentScroll > 0) {
+      window.requestAnimationFrame(topFunction);
+      window.scrollTo(0, currentScroll - (currentScroll / 10));
+    }
+  }
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

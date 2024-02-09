@@ -24,7 +24,7 @@ body {
     -moz-transition: .4s;
     transition: .4s;
     
-    .body {
+    .body{
       position: absolute;
       bottom: 0;
       width: 0;

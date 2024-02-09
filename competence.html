@@ -54,8 +54,9 @@
 
 <!-- programmations -->
 <section class="">
+  
   <div >
-    <h2 class="text-center text-black competences my-5 ">Mes Competences</h2>
+    <h2 class="text-center text-black competences my-5 b">Mes Competences</h2>
   </div>
 
     <div class="container text-black d-flex flex-wrap justify-content-center align-items-center ">
@@ -92,6 +93,16 @@
         <span class="text-black nameProgramme text-center">Figma</span>
   
     </div>
+    <div class="d-flex flex-column">
+      <img class="image m-2 grayscale myImage1"  src="./images/github-01-svgrepo-com.svg">
+      <span class="text-black nameProgramme text-center">Git</span>
+
+  </div>
+  <div class="d-flex flex-column">
+    <img class="image m-2 grayscale myImage1"  src="./images/database-svgrepo-com.svg">
+    <span class="text-black nameProgramme text-center">SQL</span>
+
+</div>
     </div>
     </section>
 <!-- gif -->
@@ -109,8 +120,8 @@
       </div></div>
   </div>
 
-
-
+<!-- <div class=" w-50 h-50 mx-auto opacity-25 text-center"><img class=" mx-auto " src="./images/codes.gif" alt=""></div> -->
+<!-- <div class=" w-25 h-25 mx-auto opacity-25 text-center"><img class="w-25"src="./images/circle.webp" alt=""></div> -->
 
 
 
@@ -118,7 +129,7 @@
 <!-- footer -->
 
 <section>
-  <footer class="myFooter">
+  <footer class="myFooter myFooterInPage1">
   
    
       <div class="footer1"></div><br>
@@ -131,13 +142,32 @@
       </svg> negar shahbazi</p>
     </div>
     <div class=" text-black d-flex justify-content-end">
-      <a class=" myButtonToUp hover" href=""><svg class="m-3 right-0" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+      <a onclick="topFunction()" id="myBtn" class=" myButtonToUp hover" href=""><svg class="m-3 right-0" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
         <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
       </svg></a>
     </div>
   </footer>
 </section>
-<script src="./main.js"></script>
+<script >// When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentScroll > 0) {
+      window.requestAnimationFrame(topFunction);
+      window.scrollTo(0, currentScroll - (currentScroll / 10));
+    }
+  }
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

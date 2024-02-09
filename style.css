@@ -12,6 +12,14 @@ body {
   overflow-x: hidden;
 }
 
+
+
+
+
+
+
+
+
 .pageDaccuiel {
   /* background-image: url(./chaos-theory_FRACTALINA.jpg); */
   box-sizing: border-box;
@@ -50,15 +58,53 @@ body {
   --_i: calc(100% - 2*var(--s));
 }
 .myContent {
-/* width: 900Px; */
-/* margin-left: 100px; */
-margin-top: 150px;
-}
-/* .content{
-  margin-left: -11em;
-} */
+  background: linear-gradient( 130deg,#f31a4500, #c86c71ef);
+  padding: 20px;
+  padding-bottom: 30px;
+margin-top: 120px;
+/* position: relative; */
+z-index: -1;
 
-/* animation css page d'accueil */
+
+
+}
+.content{
+  position: relative;
+}
+.back2 {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 81%;
+  /* bottom: -85%; */
+  transform: rotate(35deg) translateY(-60px);
+  background: linear-gradient(20deg, #23030a, rgba(228, 94, 100, 0.996));
+  /* z-index: +1; */
+}
+.back3 {
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 79%;
+  /* bottom: -85%; */
+  transform:  translateY(-13px);
+  background: linear-gradient(13deg, #0d0103, rgba(206, 54, 62, 0.996));
+  z-index: +1;
+}
+.back4 {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 86%;
+  /* bottom: -85%; */
+  transform:  translateY(34px);
+  background: linear-gradient(13deg, #3f0914, rgba(190, 98, 103, 0.996));
+  z-index: +1;
+}
+
 html {
   background: #19181800;
 }
@@ -370,8 +416,8 @@ html {
  /* projets */
 
 .grayModal{
-  -webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+  -webkit-filter: grayscale(60%);
+	filter: grayscale(60%);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
@@ -543,10 +589,53 @@ margin-right: auto;
  height: 400px;
 }
 
+/* titr in projets */
+.titr {
+  margin: 0;
+  font-size: 40px;
+  padding: 0;
+  color: white;
+  text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+    0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+    0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+    -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+  span {
+    transform: scale(0.9);
+    display: inline-block;
+  }
+  span:first-child {
+    animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite
+      alternate;
+  }
+  span:last-child {
+    animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+      infinite alternate;
+  }
+}
 
+@keyframes bop {
+  0% {
+    transform: scale(0.9);
+  }
+  50%,
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bopB {
+  0% {
+    transform: scale(0.9);
+  }
+  80%,
+  100% {
+    transform: scale(1) rotateZ(-3deg);
+  }
+}
 /* foooooter */
 .myFooterInPage1{
   /* margin-top: 200px; */
+  line-height: 0.15;
 }
 .footer1{
   height:0px;
@@ -600,16 +689,24 @@ margin-right: auto;
         width: 300%;
     }
 }
-.myButtonToUp{
- position: fixed;
- bottom: 2%;
- right: 1%;
- color: rgb(255, 255, 255);
+.myButtonToUp {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 1%;
+  color: rgb(255, 255, 255);
+  background-color: #f59e9e; /* Add a background color to make the button visible */
+  border: none;
+  border-radius: 50%; /* Makes the button circular */
+  padding: 15px;
+  cursor: pointer;
+  z-index: 99;
 }
-.myButtonToUp:hover{
-  color: #ff37002e;
 
- }
+.myButtonToUp:hover {
+  background-color: #b0aeae; /* Change background color on hover */
+}
+
   /*animation developpeur web in navbar */
   .developpeurWeb {
     font-weight: 700;
@@ -663,8 +760,8 @@ margin-right: auto;
     letter-spacing: -3px;
     margin: 0;
     position: absolute;
-    top:29%;
-    left: 87%;
+    top:27%;
+    left: 90%;
     transform: translateX(-50%) translateY(-50%);
   }
   
