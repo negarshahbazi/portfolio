@@ -1,6 +1,9 @@
 
 @import url('https://fonts.cdnfonts.com/css/adlam-display');
-*{font-family: 'ADLaM Display', sans-serif;}           
+*{font-family: 'ADLaM Display', sans-serif;}   
+* {
+  scroll-behavior: smooth;
+}        
 body {
   /* ./images/Animated\ Shape.svg */
   box-sizing: border-box;
@@ -810,4 +813,5 @@ margin-right: auto;
     animation: animate 5s forwards infinite;
     width: 150px;
   }
+ 
  
