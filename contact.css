@@ -193,7 +193,7 @@ body {
   margin-top:700px;
 }
 .myEmailPhoneSvg{
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -202,7 +202,29 @@ body {
 
 top: 40%;
 }
+@media (max-width: 974px) {
+  .letter-image {
+    /* overflow-x: hidden; */
+    top:650px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    /* display: none; */
+   
+  }
 
+  .myEmailPhoneSvg {
+    top: 57%;
+    display: block;
+    font-size: 12px;
+     
+    
+   }
+}
 
 
 

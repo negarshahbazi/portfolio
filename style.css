@@ -60,6 +60,13 @@ body {
   outline-offset: calc(var(--s)/-2);
   --_i: calc(100% - 2*var(--s));
 }
+@media (max-width: 425px) {
+  .myImage{
+    width: 300px; /* Adjust width for mobile devices */
+    height: auto; /* Let the height adjust proportionally */
+    outline: calc(var(--w)/2) solid rgba(0, 0, 0, 0);
+  }
+}
 .myContent {
   background: linear-gradient( 130deg,#f31a4500, #c86c71ef);
   padding: 20px;
