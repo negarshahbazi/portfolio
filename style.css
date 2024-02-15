@@ -60,7 +60,7 @@ body {
   outline-offset: calc(var(--s)/-2);
   --_i: calc(100% - 2*var(--s));
 }
-@media (max-width: 425px) {
+@media (max-width: 550px) {
   .myImage{
     width: 300px; /* Adjust width for mobile devices */
     height: auto; /* Let the height adjust proportionally */
@@ -115,6 +115,64 @@ z-index: -1;
   transform:  translateY(34px);
   background: linear-gradient(13deg, #3f0914, rgba(190, 98, 103, 0.996));
   z-index: +1;
+}
+@media (max-width:550px){
+  .back2 {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 75%;
+    /* bottom: -85%; */
+    transform: rotate(35deg) translateY(-60px);
+    background: linear-gradient(20deg, #23030a, rgba(228, 94, 100, 0.996));
+    /* z-index: +1; */
+  }
+  .back3 {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 79%;
+    /* bottom: -85%; */
+    transform:  translateY(-13px);
+    background: linear-gradient(13deg, #0d0103, rgba(206, 54, 62, 0.996));
+    z-index: +1;
+  }
+  .back4 {
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 86%;
+    /* bottom: -85%; */
+    transform:  translateY(10px);
+    background: linear-gradient(13deg, #3f0914, rgba(190, 98, 103, 0.996));
+    z-index: +1;
+  }
+  .myContent {
+    background: linear-gradient( 130deg,#f31a4500, #c86c71ef);
+    padding: 40px;
+    padding-bottom: 30px;
+  margin-top: 120px;
+  /* position: relative; */
+  z-index: -1;
+  
+  
+  
+  }
+  .myButtonToUp{
+    display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  color: rgb(255, 255, 255);
+  background-color: #f59e9e; /* Add a background color to make the button visible */
+  border: none;
+  border-radius: 50%; /* Makes the button circular */
+  padding: 5px;
+  cursor: pointer;
+  }
 }
 
 html {
@@ -616,14 +674,14 @@ margin-right: auto;
   margin-left: auto;
   margin-right: auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   #carouselExampleDark {
     width: 300px; /* Adjust width for mobile devices */
     height: auto; /* Let the height adjust proportionally */
     display: none;
   }
 }
-@media (min-width: 601px) and (max-width: 925px) {
+@media (min-width: 501px) and (max-width: 925px) {
 
   #carouselExampleDark {
     width:400px; /* Adjust width for mobile devices */
@@ -741,12 +799,12 @@ margin-right: auto;
   display: none;
   position: fixed;
   bottom: 2%;
-  right: 1%;
+  right: 2%;
   color: rgb(255, 255, 255);
   background-color: #f59e9e; /* Add a background color to make the button visible */
   border: none;
   border-radius: 50%; /* Makes the button circular */
-  padding: 15px;
+  padding: 5px;
   cursor: pointer;
   z-index: 99;
 }
@@ -809,7 +867,7 @@ margin-right: auto;
     margin: 0;
     position: absolute;
     top:27%;
-    left: 90%;
+    left: 80%;
     transform: translateX(-50%) translateY(-50%);
   }
   
@@ -835,6 +893,22 @@ margin-right: auto;
   .a:after {
     border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
     box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+  }
+  @media(max-width:550px){
+     
+  .a {
+    color: #fffbf1;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top:35%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
   }
   /* animation for svg  */
   .pathSvg {
