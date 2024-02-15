@@ -590,6 +590,11 @@ margin-right: auto;
   .sizeImg {
     width: 200px; /* Adjust width for mobile devices */
     height: auto; /* Let the height adjust proportionally */
+  
+  
+  }
+  .myProjets{
+    margin-bottom: 10px;
   }
 }
 
@@ -605,8 +610,18 @@ margin-right: auto;
   #carouselExampleDark {
     width: 300px; /* Adjust width for mobile devices */
     height: auto; /* Let the height adjust proportionally */
+    display: none;
   }
 }
+@media (min-width: 426px) and (max-width: 925px) {
+
+  #carouselExampleDark {
+    width:400px; /* Adjust width for mobile devices */
+    height: auto; /* Let the height adjust proportionally */
+
+  }
+}
+
 .carousel-item img{
  height: 400px;
 }
@@ -658,6 +673,7 @@ margin-right: auto;
 .myFooterInPage1{
   /* margin-top: 200px; */
   line-height: 0.15;
+  overflow: hidden;
 }
 .footer1{
   height:0px;
