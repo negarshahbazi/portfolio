@@ -60,7 +60,7 @@ body {
   outline-offset: calc(var(--s)/-2);
   --_i: calc(100% - 2*var(--s));
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .myImage{
     width: 300px; /* Adjust width for mobile devices */
     height: auto; /* Let the height adjust proportionally */
@@ -116,7 +116,7 @@ z-index: -1;
   background: linear-gradient(13deg, #3f0914, rgba(190, 98, 103, 0.996));
   z-index: +1;
 }
-@media (max-width:550px){
+@media (max-width:600px){
   .back2 {
     border-radius: 100%;
     width: 50px;
