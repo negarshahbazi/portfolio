@@ -899,13 +899,13 @@ margin-right: auto;
   .a {
     color: #fffbf1;
     text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     text-decoration: none;
     letter-spacing: -3px;
     margin: 0;
     position: absolute;
-    top:35%;
+    top:20%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
