@@ -645,17 +645,31 @@ margin-left: auto;
 margin-right: auto;
   width:400px;
   height: 400px;
+  overflow: hidden;
  }
- @media (max-width: 425px) {
+ .picture{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+ @media (max-width: 1200px) {
   .sizeImg {
-    width: 200px; /* Adjust width for mobile devices */
-    height: auto; /* Let the height adjust proportionally */
+    width: 350px; /* Adjust width for mobile devices */
+    height: 350px; /* Let the height adjust proportionally */
   
   
   }
- 
+  
   .myProjets{
     margin-bottom: 10px;
+  }
+}
+@media (max-width:400px) {
+  .sizeImg {
+    width: 250px; /* Adjust width for mobile devices */
+    height: 250px; /* Let the height adjust proportionally */
+  
+  
   }
 }
 @media (min-width: 426px) and (max-width: 600px) {
@@ -671,7 +685,8 @@ margin-right: auto;
   width: 800px;
  
 
-  margin-left: auto;
+  margin-left:
+   auto;
   margin-right: auto;
 }
 @media (max-width: 500px) {

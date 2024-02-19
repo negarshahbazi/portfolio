@@ -168,10 +168,9 @@
     crossorigin="anonymous"></script>
   <script>
 
-    let letter = document.querySelector(".myLetterInContact");
     let email = document.querySelector(".myEmailPhoneSvg");
     let animatedMail = document.querySelector('.letter-image');
-    letter.addEventListener('click', () => {
+    animatedMail.addEventListener('click', () => {
       email.classList.remove("d-none");
       email.classList.add("d-block");
     });
