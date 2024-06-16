@@ -252,9 +252,67 @@ top: 40%;
 
 
 
+/* foooooter */
+.myFooterInPage2{
 
+  line-height: 0.15;
+  overflow: hidden;
+bottom: 0px;
+ 
+}
 
+.footer1{
+  height:0px;
+  width:1px;
+  border-bottom:6px solid #460202;
+  
+  -webkit-animation: increase 15s;
+  -moz-animation:    increase 15s; 
+  -o-animation:      increase 15s; 
+  animation:         increase 15s; 
+  animation-fill-mode: forwards;
+  padding-top: 20px;
+}
 
+@keyframes increase {
+    100% {
+        width: 300%;
+    }
+}
+.footer2{
+  height:0px;
+  width:1px;
+  border-bottom:4px solid #f40606;
+  
+  -webkit-animation: increase 13s;
+  -moz-animation:    increase 13s; 
+  -o-animation:      increase 13s; 
+  animation:         increase 13s; 
+  animation-fill-mode: forwards;
+}
+
+@keyframes increase {
+    100% {
+        width: 300%;
+    }
+}
+.footer3{
+  height:0px;
+  width:1px;
+  border-bottom:2px solid #ed5151;
+  
+  -webkit-animation: increase 7s;
+  -moz-animation:    increase 7s; 
+  -o-animation:      increase 7s; 
+  animation:         increase 7s; 
+  animation-fill-mode: forwards;
+}
+
+@keyframes increase {
+    100% {
+        width: 300%;
+    }
+}
 
 
 
